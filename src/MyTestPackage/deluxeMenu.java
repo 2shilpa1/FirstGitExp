@@ -18,7 +18,7 @@ public class deluxeMenu {
 
 		driver.get("http://deluxe-menu.com/popup-mode-sample.html");
 
-		/*WebElement img = driver.findElement(By.xpath("html/body/div[1]/table/tbody/tr/td[2]/div[2]/table[1]/tbody/tr/td[3]/p[2]/img"));
+		WebElement img = driver.findElement(By.xpath("html/body/div[1]/table/tbody/tr/td[2]/div[2]/table[1]/tbody/tr/td[3]/p[2]/img"));
 
 	Actions action = new Actions(driver);
 	action.contextClick(img).build().perform();
@@ -27,21 +27,9 @@ public class deluxeMenu {
 
 
 	action.moveToElement(driver.findElement(By.xpath("//td[@id='dm2m2i1tdT']"))).build().perform();
-	driver.findElement(By.xpath("//td[@id='dm2m3i1tdT']")).click();*/
+	driver.findElement(By.xpath("//td[@id='dm2m3i1tdT']")).click();
 
-		WebElement prodInfo = driver.findElement(By.xpath("//*[@id='dm0m0i1tdT']/div"));
-		Actions builder = new Actions(driver);
-		Action seriesOfAction = builder
-				.click(prodInfo)
-				.sendKeys(Keys.DOWN)
-				.sendKeys(Keys.DOWN)
-				.sendKeys(Keys.DOWN)
-				.sendKeys(Keys.DOWN)
-				.sendKeys(Keys.DOWN)
-				.sendKeys(Keys.DOWN)
-				.sendKeys(Keys.DOWN)
-				.build();
-		seriesOfAction.perform();
+		
 
 
 
